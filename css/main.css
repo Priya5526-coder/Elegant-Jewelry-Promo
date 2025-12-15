@@ -1,0 +1,30 @@
+.top{
+    background-color: rgb(7, 67, 40);
+}
+.section2-left {
+            background-image: url(images/page1_img15.jpeg);
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+
+        .section2-right img {
+            height: 100vh;
+            object-fit: cover;
+        }
+        
+        /* Adjusted for smaller screens where 100vh might be too tall */
+        @media (max-width: 767.98px) {
+            .section2-left,
+            .section2-right img {
+                height: 50vh; /* Make banner shorter on mobile */
+            }
+        }
+
+        /* Specific styles for section 9 background images */
+        .winter-love-bg {
+            background-image: url('images/page1_img17.jpeg');
+            background-size: cover;
+            background-position: center;
+            height: 400px; /* Set a consistent height */
+        }
