@@ -28,3 +28,22 @@
             background-position: center;
             height: 400px; /* Set a consistent height */
         }
+
+        .collection-img {
+        width: 160px;
+        height: 160px;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        border-radius: 50%; /* Making them circular */
+    }
+    /* Ensure the scrollable container is set up correctly */
+    .collection-scroll-container {
+        /* d-flex is already present */
+        /* Enable scrolling on small screens if content exceeds width */
+        overflow-x: auto; 
+        white-space: nowrap; /* Prevent items from wrapping to the next line */
+    }
+    /* Hide the scrollbar for aesthetic purposes on certain browsers */
+    .collection-scroll-container::-webkit-scrollbar {
+        display: none;
+    }
